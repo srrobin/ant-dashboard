@@ -1,4 +1,4 @@
-import { Layout, Menu } from "antd";
+import { Card, Col, Layout, Menu, Row, Space, Typography } from "antd";
 import React, { useState } from "react";
 import {
   AiOutlineControl,
@@ -91,7 +91,64 @@ const Dashboard = () => {
           </>
           header
         </Header>
-        <Content>Content</Content>
+        <Content className="content">
+          <Row gutter={[16, 32]}>
+            <Col xl={8} xs={24}>
+              <Card>
+                <Typography.Title> Card Title </Typography.Title>
+                <Typography.Paragraph>
+                  lorem30 Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Suspendisse mollis, nisl luctus accumsan ultricies,
+                  justo turpis dictum augue, vel bibendum urna massa nec risus.
+                  Phasellus accumsan, ligula in facilisis porttitor, nunc erat
+                  lacinia magna, nec sagittis nulla metus sed odio. Quisque
+                  facilisis ut dui non euismod. Praesent ut lacinia nisl, ut
+                  tempor nulla. Duis tincidunt ut dolor sit amet accumsan.
+                  Maecenas euismod sapien vel libero interdum, quis gravida
+                  risus vehicula.
+                </Typography.Paragraph>
+              </Card>
+            </Col>
+            <Col xl={8} xs={24}>
+              <Card>
+                <Space direction="horizontal">
+                  <AiOutlineDeploymentUnit size={50} />
+                  <Typography.Title> Card Title </Typography.Title>
+                </Space>
+                <Typography.Paragraph>
+                  lorem30 Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Suspendisse mollis, nisl luctus accumsan ultricies,
+                  justo turpis dictum augue, vel bibendum urna massa nec risus.
+                  Phasellus accumsan, ligula in facilisis porttitor, nunc erat
+                  lacinia magna, nec sagittis nulla metus sed odio. Quisque
+                  facilisis ut dui non euismod. Praesent ut lacinia nisl, ut
+                  tempor nulla. Duis tincidunt ut dolor sit amet accumsan.
+                  Maecenas euismod sapien vel libero interdum, quis gravida
+                  risus vehicula.
+                </Typography.Paragraph>
+              </Card>
+            </Col>
+            <Col xl={8} xs={24}>
+              <Card>
+                <Space direction="horizontal">
+                  <AiOutlineDeploymentUnit size={30} />
+                  <small>Discription</small>
+                </Space>
+                <Typography.Paragraph>
+                  lorem30 Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Suspendisse mollis, nisl luctus accumsan ultricies,
+                  justo turpis dictum augue, vel bibendum urna massa nec risus.
+                  Phasellus accumsan, ligula in facilisis porttitor, nunc erat
+                  lacinia magna, nec sagittis nulla metus sed odio. Quisque
+                  facilisis ut dui non euismod. Praesent ut lacinia nisl, ut
+                  tempor nulla. Duis tincidunt ut dolor sit amet accumsan.
+                  Maecenas euismod sapien vel libero interdum, quis gravida
+                  risus vehicula.
+                </Typography.Paragraph>
+              </Card>
+            </Col>
+          </Row>
+        </Content>
       </Layout>
     </Layout>
   );
